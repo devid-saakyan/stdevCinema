@@ -90,9 +90,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'stdevcinema',
         'USER': 'cinema_user',
-        'PASSWORD': 'cinema_pass',
-        'HOST': '188.116.25.250',
-        'PORT': '5432',
+        'PASSWORD': 'hidden',
+        'HOST': 'hidden',
+        'PORT': 'hidden',
     }
 }
 
