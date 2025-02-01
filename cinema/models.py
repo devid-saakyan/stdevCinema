@@ -15,7 +15,7 @@ class Movie(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name="movies")
 
     def __str__(self):
-        return f"{self.title} at {self.show_time}"
+        return f"{self.title} at {self.show_time} in {self.room}"
 
 
 class Seat(models.Model):

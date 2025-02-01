@@ -77,10 +77,21 @@ WSGI_APPLICATION = 'stdevCinema.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'stdevcinema',
+        'USER': 'cinema_user',
+        'PASSWORD': 'cinema_pass',
+        'HOST': '188.116.25.250',
+        'PORT': '5432',
     }
 }
 
